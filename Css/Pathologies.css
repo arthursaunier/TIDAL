@@ -66,8 +66,9 @@ body {
 
 .list-group {
   width: auto;
-  max-width: 460px;
+  max-width: 800px;
   margin: 4rem auto;
+  max-height: fit-content;
 }
 
 
