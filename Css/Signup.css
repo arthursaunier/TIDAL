@@ -9,6 +9,9 @@
     background-image: url(../Images/acupuncture-process.jpg);
     background-size: cover;
   }
+  label{
+    color: honeydew;
+  }
   
 .btn {
     padding: 0.5em 1em;
