@@ -39,20 +39,49 @@
       <div>
         <h1>Acupuncture.com</h1>
         <nav class="nav nav-masthead justify-content-center ">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Pathologies</a>
-          <a class="nav-link" href="#">Infos</a>
+          <a class="nav-link" aria-current="page" href="Home.html">Home</a>
+          <a class="nav-link active" href="Pathologies.html">Pathologies</a>
+          <a class="nav-link" href="Infos.html">Infos</a>
+          <a class="nav-link" onclick="afficher()">Connexion</a>
         </nav>
+        <div id="auth"></div>
       </div>
     </header>
 
     <main class="px-3">
-      <h1>Si vous avez des questions sur l'acupunture, nous somme le site qu'il vous faut.</h1>
-      <p class="lead"></p>
-      <p class="lead">
-        <a href="./Pathologies.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white text-black">Découvrir
+      
+      <div class="list-group overflow-auto">
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">List group item heading</h6>
+              <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
+            </div>
+            <small class="opacity-50 text-nowrap">now</small>
+          </div>
         </a>
-      </p>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Another title here</h6>
+              <p class="mb-0 opacity-75">Some placeholder content in a paragraph that goes a little longer so it wraps to a new line.</p>
+            </div>
+            <small class="opacity-50 text-nowrap">3d</small>
+          </div>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h6 class="mb-0">Third heading</h6>
+              <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
+            </div>
+            <small class="opacity-50 text-nowrap">1w</small>
+          </div>
+        </a>
+      </div>
     </main>
 
     <footer class="mt-auto text-white">
