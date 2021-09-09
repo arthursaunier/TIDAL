@@ -4,6 +4,7 @@ var partie2 = "<input type='text' class='champ' autocomplete='off' placeholder='
  
 var partie3 = "<br><br><input  type='submit' class='btn' value='connexion'></div></div> <input  type='submit' value='inscription'></div></div>";
  
+
 function afficher() {
 document.getElementById("auth").innerHTML= partie1 + partie2 + partie3;
 }
@@ -11,3 +12,6 @@ document.getElementById("auth").innerHTML= partie1 + partie2 + partie3;
 function cacher(){
 document.getElementById("auth").innerHTML="";
 }
+
+
+
