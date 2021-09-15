@@ -1,4 +1,4 @@
-var partie1 = "<div class='fond'><div class='affichage'><input type='button' value='×' onclick='cacher();' class='btn-fermer btn-outline-secondary'>";
+var partie1 = "<div class='fond '><div class='affichage'><input type='button' value='×' onclick='cacher();' class='btn-fermer btn-outline-secondary'>";
  
 var partie2 = "<input type='text' class='champ form-control' autocomplete='off' placeholder='Utilisateur'><input type='text' class='champ form-control' autocomplete='off' placeholder='Mot de passe'>";
  
