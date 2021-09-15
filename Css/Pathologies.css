@@ -57,6 +57,9 @@ body {
   cursor: pointer;
 }
 
+/* Patho */
+
+
 /*
  * list
  */
@@ -68,7 +71,7 @@ body {
   width: auto;
   max-width: 800px;
   margin: 4rem auto;
-  max-height: fit-content;
+  max-height: 300px;
 }
 
 
