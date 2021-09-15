@@ -72,22 +72,25 @@ body {
 .opacity-75 { opacity: .75; }
 
 .list-group {
-  width: 70%;
+  width: auto;
   max-width: 70%;
-  margin: 4rem auto;
+  margin: 4rem 0;
   max-height: 100%;
 }
 
 .filter {
-  width: 30%;
+  width: auto;
   max-width: 30%;
+  margin: 4rem 0;
+  max-height: 100%;
 }
 
 /* filter */
 
 .list-group > .list-group {
   display: none;
-  margin-bottom: 0;
+  margin: 0 0;
+  width: 100%;
 }
 .list-group-item:focus-within + .list-group {
   display: block;
