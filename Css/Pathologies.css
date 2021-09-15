@@ -59,6 +59,10 @@ body {
 
 /* Patho */
 
+.container {
+  width: auto;
+  max-width: 80%;
+}
 
 /*
  * list
@@ -68,10 +72,38 @@ body {
 .opacity-75 { opacity: .75; }
 
 .list-group {
-  width: auto;
-  max-width: 800px;
+  width: 70%;
+  max-width: 70%;
   margin: 4rem auto;
-  max-height: 300px;
+  max-height: 100%;
+}
+
+.filter {
+  width: 30%;
+  max-width: 30%;
+}
+
+/* filter */
+
+.list-group > .list-group {
+  display: none;
+  margin-bottom: 0;
+}
+.list-group-item:focus-within + .list-group {
+  display: block;
+}
+
+.list-group > .list-group-item {
+  border-radius: 0;
+  border-width: 1px 0 0 0;
+}
+
+.list-group > .list-group-item:first-child {
+  border-top-width: 0;
+}
+
+.list-group  > .list-group > .list-group-item {
+  padding-left: 2.5rem;
 }
 
 
