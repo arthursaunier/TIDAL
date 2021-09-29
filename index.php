@@ -1,25 +1,17 @@
-
 <?php
-define('SMARTY_DIR', '/home/web/TIDAL/public/smarty-3.1.39/libs/');
-require_once(SMARTY_DIR . 'Smarty.class.php');
-$smarty = new Smarty();
+require('controller/controller.php');
 
-$host = 'localhost';
-$dbname = 'acudb';
-$username = 'postgres-web';
-$password = 'web';
-
-try {
-    $conn = new PDO("pgsql:host=$host;port=5432;dbname=$dbname;user=$username;password=$password");
-
-    if ($conn) {
-        echo "Connecté";
-    } else {
+if (isset($_GET['action'])) {
+    if ($_GET['action'] == 'home') {
         home();
-    }
-} catch (Exception $e) {
-    echo "Non Connecté";
-    echo $e->getCode() . ' ' . $e->getMessage();
-}
+    } elseif ($_GET['action'] == 'info') {
+        info();
+    } elseif ($_GET['action'] == 'pathologie') {
+        pathologies();
+    } elseif ($_GET['action'] == 'signup') {
+        signup();
 
-$page = 'localhost';
+    }
+} else {
+    home();
+}
