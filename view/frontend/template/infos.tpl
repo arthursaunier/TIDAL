@@ -1,15 +1,4 @@
-<!doctype html>
-<html lang="en" class="h-100">
-
-<head>
-  <meta charset="utf-8">
-
-  <title>Acupuncture.com</title>
-  <script src="../../../public/Javascript/Infos.js"></script>
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
-  <link rel="stylesheet" href="../css/global.css">
-  <link href="../../../public/assets/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+{include file="header.tpl" title="infos"}
 
 <body class="bg-dark">
 

@@ -1,13 +1,4 @@
-<!doctype html>
-<html lang="fr">
-
-<head>
-  <meta charset="utf-8">
-  <title>Checkout example · Bootstrap v5.1</title>
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/checkout/">
-  <link rel="stylesheet" href="../css/global.css">
-  <link href="../../../public/assets/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+{include file="header.tpl" title="signup"}
 
 <body class="d-flex h-100 text-center text-white bg-dark">
 
