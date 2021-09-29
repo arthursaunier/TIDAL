@@ -1,5 +1,6 @@
 
 <?php
+include("Smarty.class.php");
 $host = 'localhost';
 $dbname = 'acudb';
 $username = 'postgres-web';
@@ -16,4 +17,4 @@ $password = 'web';
         echo $e->getCode() . ' ' . $e->getMessage();
     }
 
-
+$page = 'localhost';
