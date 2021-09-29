@@ -6,21 +6,21 @@ function home()
 {
     //$posts = getPosts();
     //$comments = getComments($_GET['id']);
-    require('Home.html');
+    require('Home.php');
 }
 
 function info()
 {
-    require('Infos.html');
+    require('Info.php');
 }
 
 function pathologies()
 {
 
-    require('Pathologies.html');
+    require('Pathologies.php');
 }
 function signup()
 {
 
-    require('Signup.html');
+    require('Signup.php');
 }
