@@ -3,9 +3,9 @@
 <body class="d-flex h-100 text-center text-white bg-dark">
 
   <div class="container text-center">
+  {include file="navbar.tpl" $active[3]="active"}
+
     <main>
-
-
 
       <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"></div>
 

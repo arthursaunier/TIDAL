@@ -2,17 +2,7 @@
 
 <body class="bg-dark">
 
-  <header class="mb-auto">
-    <div>
-      <h1>Acupuncture.com</h1>
-      <nav class="nav nav-masthead justify-content-center ">
-        <a class="nav-link" aria-current="page" href="Home.html">Home</a>
-        <a class="nav-link" href="Pathologies.html">Pathologies</a>
-        <a class="nav-link active" href="Infos.html">Infos</a>
-      </nav>
-      <div id="auth"></div>
-    </div>
-  </header>
+  {include file="navbar.tpl" $active[2]="active"}
 
 
   <div class="container marketing">

@@ -3,18 +3,7 @@
 <body class="d-flex h-100 text-center text-white bg-dark">
 
   <div class="container-fluid d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="mb-auto">
-      <div>
-        <h1>Acupuncture.com</h1>
-        <nav class="nav nav-masthead justify-content-center ">
-          <a class="nav-link" aria-current="page" href="Home.html">Home</a>
-          <a class="nav-link active" href="Pathologies.html">Pathologies</a>
-          <a class="nav-link" href="Infos.html">Infos</a>
-          <a class="nav-link" onclick="afficher()">Connexion</a>
-        </nav>
-        <div id="auth"></div>
-      </div>
-    </header>
+    {include file="navbar.tpl" $active[1]="active"}
 
     <main class="px-3">
 
