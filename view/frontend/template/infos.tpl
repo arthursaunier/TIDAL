@@ -60,6 +60,7 @@
     </div>
     <hr class="featurette-divider">
 
+  {include file="footer.tpl"}
   </div>
 
 

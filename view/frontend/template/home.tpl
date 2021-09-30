@@ -28,9 +28,7 @@
       </p>
     </main>
 
-    <footer class="mt-auto text-white">
-      <p>by CPE for TIDAL</p>
-    </footer>
+    {include file="footer.tpl"}
   </div>
 
 </body>
