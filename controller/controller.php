@@ -12,7 +12,7 @@ function home()
 function register(){
     include_once('../model/user.php');
     echo $_SERVER["REQUEST_METHOD"];
-    $user = new User($_POST['email'], $_POST['password']);
+    $user = new User($_POST['email'], $_POST['password'], $_POST['prenom'], $_POST['nom']);
     
     $user->register();
     
