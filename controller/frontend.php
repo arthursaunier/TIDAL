@@ -1,6 +1,6 @@
 <?php
 
-require('frontend.php');
+//require('frontend.php');
 
 function home()
 {
