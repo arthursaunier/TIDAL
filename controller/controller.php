@@ -2,11 +2,25 @@
 
 //require('model.php');//php qui contient les fonctions get 
 
+switch($_SERVER["REQUEST_METHOD"]){
+    case "POST" : 
+        print_r($_POST);
+        //register();
+        login();
+
+        break;
+    case "GET":
+        //signup();
+        home();
+        break;
+             
+}
+
 function home()
 {
     //$posts = getPosts();
     //$comments = getComments($_GET['id']);
-    require('Home.php');
+    require('../view/frontend/Home.php');
 }
 
 function register(){
@@ -15,6 +29,7 @@ function register(){
     $user = new User($_POST['email'], $_POST['password'], $_POST['prenom'], $_POST['nom']);
     
     $user->register();
+    header("Location: ../view/index.php");
     
 }
 
@@ -28,7 +43,7 @@ function login(){
         session_start();
         $_SESSION['user'] = $user;
         print_r($user);
-        //header("Location: ./index.php");
+        header("Location: ../view/index.php");
     }
     
 }
@@ -46,5 +61,5 @@ function pathologies()
 function signup()
 {
 
-    require('Signup.php');
+    require('../view/frontend/Signup.html');
 }

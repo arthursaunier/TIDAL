@@ -32,7 +32,7 @@ class User{
     public function login(){
         try{
             $bdd_ref = bdd::connect();
-            $req = $bdd_ref->prepare('SELECT * from "user" where email= \'titi\'');
+            $req = $bdd_ref->prepare('SELECT * from "user" where email= \''.$this->_email.'\'');
             $req->execute(); 
             $user= $req->fetch(PDO::FETCH_OBJ);
 
