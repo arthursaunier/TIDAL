@@ -9,6 +9,14 @@ function home()
     require('Home.php');
 }
 
+function register(){
+    include_once('../model/user.php');
+    echo $_SERVER["REQUEST_METHOD"];
+    $user = new User($_POST['email'], $_POST['password']);
+    
+    $user->register();
+    
+}
 function info()
 {
     require('Info.php');
