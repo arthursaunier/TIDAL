@@ -3,7 +3,7 @@
 <body class="d-flex h-100 text-center text-white bg-dark">
 
   <div class="container-fluid d-flex w-100 h-100 p-3 mx-auto flex-column">
-    {include file="navbar.tpl" $active[1]="active"}
+    {include file="navbar.tpl" $active="pathologies"}
 
     <main class="px-3">
 

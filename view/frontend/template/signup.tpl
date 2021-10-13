@@ -3,7 +3,7 @@
 <body class="d-flex h-100 text-center text-white bg-dark">
 
   <div class="container text-center">
-  {include file="navbar.tpl" $active[3]="active"}
+  {include file="navbar.tpl" $active="signup"}
 
     <main>
 

@@ -2,7 +2,7 @@
 
 <body class="bg-dark">
 
-  {include file="navbar.tpl" $active[2]="active"}
+  {include file="navbar.tpl" $active="infos"}
 
 
   <div class="container marketing">
