@@ -1,23 +1,23 @@
 <?php
 
-//require('frontend.php');
+require_once('../TIDAL/model/frontend.php');
 
 function home()
 {
-    require('../view/frontend/home.php');
+    require_once('../TIDAL/view/frontend/home.php');
 }
 
 function info()
 {
-    require('../view/frontend/info.php');
+    require_once('../TIDAL/view/frontend/info.php');
 }
 
 function pathologies()
 {
-    require('../view/frontend/pathologies.php');
+    require_once('../TIDAL/view/frontend/pathologies.php');
 }
 function signup()
 {
-    require('../view/frontend/signup.php');
+    require_once('../TIDAL/view/frontend/signup.php');
 }
 
