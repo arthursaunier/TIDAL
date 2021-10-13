@@ -1,6 +1,6 @@
 <?php
 
-require_once('../model/frontend.php');
+require_once('../TIDAL/model/frontend.php');
 
 function home()
 {
