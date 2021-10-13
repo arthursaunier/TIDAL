@@ -1,6 +1,6 @@
 <?php
 
-//require('model.php');//php qui contient les fonctions get 
+require_once('frontend.php');
 
 switch($_SERVER["REQUEST_METHOD"]){
     case "POST" : 
@@ -14,13 +14,6 @@ switch($_SERVER["REQUEST_METHOD"]){
         home();
         break;
              
-}
-
-function home()
-{
-    //$posts = getPosts();
-    //$comments = getComments($_GET['id']);
-    require('../view/frontend/Home.php');
 }
 
 function register(){
@@ -46,20 +39,4 @@ function login(){
         header("Location: ../view/index.php");
     }
     
-}
-
-function info()
-{
-    require('Info.php');
-}
-
-function pathologies()
-{
-
-    require('Pathologies.php');
-}
-function signup()
-{
-
-    require('../view/frontend/Signup.html');
 }

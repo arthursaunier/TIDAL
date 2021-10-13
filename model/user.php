@@ -1,5 +1,5 @@
 <?php
-require_once('../bdd.php');
+require_once('bdd.php');
 class User{
     public $_email;
     public $_password;
