@@ -14,6 +14,7 @@ function info()
 
 function pathologies()
 {
+    $list = getList();
     require_once('../TIDAL/view/frontend/pathologies.php');
 }
 function signup()
