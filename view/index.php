@@ -5,6 +5,6 @@ define('SMARTY_DIR', '/home/web/TIDAL/smarty-3.1.39/libs/');
 require_once("../controller/controller.php");
 //$smarty = new Smarty();
 
-register();
+login();
 
 $page = 'localhost';

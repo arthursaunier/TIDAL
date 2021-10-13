@@ -17,6 +17,22 @@ function register(){
     $user->register();
     
 }
+
+function login(){
+    include_once('../model/user.php');
+    $user = new User($_POST['email'], $_POST['password']);
+    $user = $user->login();
+    if(!$user){
+        echo("mdp ou email incorrect");
+    }else{
+        session_start();
+        $_SESSION['user'] = $user;
+        print_r($user);
+        //header("Location: ./index.php");
+    }
+    
+}
+
 function info()
 {
     require('Info.php');

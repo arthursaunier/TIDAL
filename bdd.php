@@ -8,7 +8,6 @@ class bdd {
         $password = 'web';
         try {
             $conn = new PDO("pgsql:host=$host;port=5432;dbname=$dbname;user=$username;password=$password");
-         
             return $conn;
         } catch (Exception $e) {
             echo "Non Connecté";
