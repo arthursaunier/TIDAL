@@ -13,7 +13,7 @@ function getList()
     INNER JOIN meridien AS M ON M.code = P.mer) TabI ON TabI.idS = S.idS');
     $num_results = $req->rowCount();
     for ($i ; $i<$num_results ; $i++){
-        $rows[] = $req->fetch_assoc(); 
+        $rows[] = $req->fetch(PDO::FETCH_ASSOC); 
     }
     $smarty->assign('rows',$rows);
     return $rows;
@@ -26,7 +26,7 @@ function getFilterPatho()
     $req = $conn->query('SELECT P.desc AS pathologie FROM patho AS P');
     $num_results = $req->rowCount();
     for ($i ; $i<$num_results ; $i++){
-        $rowspatho[] = $req->fetch_assoc(); 
+        $rowspatho[] = $req->fetch(PDO::FETCH_ASSOC); 
     }
     $smarty->assign('rowspatho',$rowspatho);
     return $rowspatho;
@@ -39,7 +39,7 @@ function getFilterMeridien()
     $req = $conn->query('SELECT M.nom AS meridien FROM meridien AS M');
     $num_results = $req->rowCount();
     for ($i ; $i<$num_results ; $i++){
-        $rowsmer[] = $req->fetch_assoc(); 
+        $rowsmer[] = $req->fetch(PDO::FETCH_ASSOC); 
     }
     $smarty->assign('rowsmer',$rowsmer);
     return $rowsmer;
