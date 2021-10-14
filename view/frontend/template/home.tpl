@@ -1,4 +1,4 @@
-{include file={$_SERVER['DOCUMENT_ROOT']} . "/header.tpl" title="acupuncture.com"}
+{include file='/home/web/Documents/TIDAL/view/frontend/template/header.tpl' title="acupuncture.com"}
 
 <body class="d-flex h-100 text-center text-white bg-image"
   style="background-image: url(../Images/acupuncture-process.jpg);">
@@ -15,7 +15,7 @@
       </p>
     </main>
 
-    {include file="footer.tpl"}
+    {include file="/home/web/Documents/TIDAL/view/frontend/template/footer.tpl"}
   </div>
 
 </body>

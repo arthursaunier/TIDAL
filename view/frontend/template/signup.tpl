@@ -1,9 +1,9 @@
-{include file="header.tpl" title="signup"}
+{include file="/home/web/Documents/TIDAL/view/frontend/template/header.tpl" title="signup"}
 
 <body class="d-flex h-100 text-center text-white bg-dark">
 
   <div class="container text-center">
-  {include file="navbar.tpl" active="signup"}
+  {include file="/home/web/Documents/TIDAL/view/frontend/template/navbar.tpl" active="signup"}
 
     <main>
 

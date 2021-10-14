@@ -1,8 +1,8 @@
-{include file="header.tpl" title="infos"}
+{include file="/home/web/Documents/TIDAL/view/frontend/template/header.tpl" title="infos"}
 
 <body class="bg-dark">
 
-  {include file="navbar.tpl" active="infos"}
+  {include file="/home/web/Documents/TIDAL/view/frontend/template/navbar.tpl" active="infos"}
 
 
   <div class="container marketing">
@@ -50,7 +50,7 @@
     </div>
     <hr class="featurette-divider">
 
-  {include file="footer.tpl"}
+  {include file="/home/web/Documents/TIDAL/view/frontend/template/footer.tpl"}
   </div>
 
 
