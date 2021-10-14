@@ -9,7 +9,7 @@ function home()
 
 function info()
 {
-    require_once('../TIDAL/view/frontend/info.php');
+    require_once('../TIDAL/view/frontend/infos.php');
 }
 
 function pathologies()

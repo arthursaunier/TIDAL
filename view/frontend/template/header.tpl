@@ -7,7 +7,7 @@
   <title>{$title|default:"no title"}</title>
   <script src="../../../public/Javascript/Home.js"></script>
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
-  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../../../public/css/global.css">
   <link href="../../../public/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
