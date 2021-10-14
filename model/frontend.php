@@ -28,7 +28,7 @@ function getFilterPatho()
     for ($i ; $i<$num_results ; $i++){
         $rowspatho[] = $req->fetch(PDO::FETCH_ASSOC); 
     }
-    $smarty->assign('rowspatho',$rowspatho,global);
+    $smarty->assign('rowspatho',$rowspatho,scope="global");
     return $rowspatho;
 }
 
