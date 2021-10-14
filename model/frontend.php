@@ -2,6 +2,7 @@
 
 function getList()
 {
+    $i=0;
     $conn = dbConnect();
     $req = $conn->query('SELECT S.desc symptome, TabI.desc patho, TabI.nom meridien 
     FROM symptome AS S
@@ -20,6 +21,7 @@ function getList()
 
 function getFilterPatho()
 {
+    $i=0;
     $conn = dbConnect();
     $req = $conn->query('SELECT P.desc AS pathologie FROM patho AS P');
     $num_results = $req->rowCount();
@@ -32,6 +34,7 @@ function getFilterPatho()
 
 function getFilterMeridien()
 {
+    $i=0;
     $conn = dbConnect();
     $req = $conn->query('SELECT M.nom AS meridien FROM meridien AS M');
     $num_results = $req->rowCount();
