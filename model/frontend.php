@@ -15,7 +15,7 @@ function getList()
     for ($i ; $i<$num_results ; $i++){
         $rows[] = $req->fetch(PDO::FETCH_ASSOC); 
     }
-    $smarty->assign('rows',$rows);
+    $smarty->assign('rows',$rows,global);
     return $rows;
 }
 
@@ -28,7 +28,7 @@ function getFilterPatho()
     for ($i ; $i<$num_results ; $i++){
         $rowspatho[] = $req->fetch(PDO::FETCH_ASSOC); 
     }
-    $smarty->assign('rowspatho',$rowspatho);
+    $smarty->assign('rowspatho',$rowspatho,global);
     return $rowspatho;
 }
 
@@ -41,7 +41,7 @@ function getFilterMeridien()
     for ($i ; $i<$num_results ; $i++){
         $rowsmer[] = $req->fetch(PDO::FETCH_ASSOC); 
     }
-    $smarty->assign('rowsmer',$rowsmer);
+    $smarty->assign('rowsmer',$rowsmer,global);
     return $rowsmer;
 }
 
