@@ -1,3 +1,4 @@
+{debug}
 {include file="/home/web/Documents/TIDAL/view/frontend/template/header.tpl" title="pathologies"}
 
 <body class="d-flex h-100 text-center text-white bg-dark">
