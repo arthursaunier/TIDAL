@@ -10,7 +10,7 @@
       <h1>Si vous avez des questions sur l'acupunture, nous somme le site qu'il vous faut.</h1>
       <p class="lead"></p>
       <p class="lead">
-        <a href="./Pathologies.php" class="btn btn-lg btn-secondary fw-bold border-white bg-white text-black">Découvrir
+        <a href="./pathologies.php" class="btn btn-lg btn-secondary fw-bold border-white bg-white text-black">Découvrir
         </a>
       </p>
     </main>
