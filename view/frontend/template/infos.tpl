@@ -1,29 +1,8 @@
-<!doctype html>
-<html lang="en" class="h-100">
-
-<head>
-  <meta charset="utf-8">
-
-  <title>Acupuncture.com</title>
-  <script src="../../../public/Javascript/Infos.js"></script>
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
-  <link rel="stylesheet" href="../css/global.css">
-  <link href="../../../public/assets/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+{include file="/home/web/Documents/TIDAL/view/frontend/template/header.tpl" title="infos"}
 
 <body class="bg-dark">
 
-  <header class="mb-auto">
-    <div>
-      <h1>Acupuncture.com</h1>
-      <nav class="nav nav-masthead justify-content-center ">
-        <a class="nav-link" aria-current="page" href="Home.html">Home</a>
-        <a class="nav-link" href="Pathologies.html">Pathologies</a>
-        <a class="nav-link active" href="Infos.html">Infos</a>
-      </nav>
-      <div id="auth"></div>
-    </div>
-  </header>
+  {include file="/home/web/Documents/TIDAL/view/frontend/template/navbar.tpl" active="infos"}
 
 
   <div class="container marketing">
@@ -71,6 +50,7 @@
     </div>
     <hr class="featurette-divider">
 
+  {include file="/home/web/Documents/TIDAL/view/frontend/template/footer.tpl"}
   </div>
 
 
