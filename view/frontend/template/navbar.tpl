@@ -3,15 +3,15 @@
 {assign var="infos" value=""}
 {assign var="signup" value=""}
 
-{{if $active == "home"}
+{if $active eq "home"}
   {assign var="home" value="active"}
-{elseif $active == "pathologies"}
+{elseif $active eq "pathologies"}
   {assign var="patho" value="active"}
-{elseif $active == "infos"}
+{elseif $active eq "infos"}
   {assign var="infos" value="active"}
 {else}
   {assign var="signup" value="active"}
-{/if}}
+{/if}
 
 <header class="mb-auto">
       <div>
