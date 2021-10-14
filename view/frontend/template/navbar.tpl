@@ -17,9 +17,9 @@
       <div>
         <h1>Acupuncture.com</h1>
         <nav class="nav nav-masthead justify-content-center ">
-          <a class="nav-link {$home}" aria-current="page" href="view/frontend/template/home.php">Home</a>
-          <a class="nav-link {$patho}" href="view/frontend/template/pathologies.php">Pathologies</a>
-          <a class="nav-link {$infos}" href="view/frontend/template/infos.php">Infos</a>
+          <a class="nav-link {$home}" aria-current="page" href="index.php?action=home">Home</a>
+          <a class="nav-link {$patho}" href="index.php?action=pathologie">Pathologies</a>
+          <a class="nav-link {$infos}" href="index.php?action=info">Infos</a>
           <a class="nav-link {$signup}" onclick="afficher()">Connexion</a>
         </nav>
         <div class="d-flex h-100 justify-content-center text-white">
