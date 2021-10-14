@@ -1,7 +1,7 @@
 {include file='/home/web/Documents/TIDAL/view/frontend/template/header.tpl' title="acupuncture.com"}
 
 <body class="d-flex h-100 text-center text-white bg-image"
-  style="background-image: url(../Images/acupuncture-process.jpg);">
+  style="background-image: url(../../../public/Images/acupuncture-process.jpg);">
 
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     {include file="/home/web/Documents/TIDAL/view/frontend/template/navbar.tpl" active="home"}
