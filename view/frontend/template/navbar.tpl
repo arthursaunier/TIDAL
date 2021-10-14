@@ -17,9 +17,9 @@
       <div>
         <h1>Acupuncture.com</h1>
         <nav class="nav nav-masthead justify-content-center ">
-          <a class="nav-link {$home}" aria-current="page" href="/home/web/Documents/TIDAL/view/home.php">Home</a>
-          <a class="nav-link {$patho}" href="/home/web/Documents/TIDAL/view/pathologies.php">Pathologies</a>
-          <a class="nav-link {$infos}" href="/home/web/Documents/TIDAL/view/infos.php">Infos</a>
+          <a class="nav-link {$home}" aria-current="page" href="/view/home.php">Home</a>
+          <a class="nav-link {$patho}" href="/view/pathologies.php">Pathologies</a>
+          <a class="nav-link {$infos}" href="/view/infos.php">Infos</a>
           <a class="nav-link {$signup}" onclick="afficher()">Connexion</a>
         </nav>
         <div class="d-flex h-100 justify-content-center text-white">
