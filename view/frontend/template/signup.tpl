@@ -10,7 +10,7 @@
       <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"></div>
 
 
-      <form method="POST" action="../../controller/controller.php" class="needs-validation text-center" novalidate>
+      <form method="POST" action="../../../controller/backend.php" class="needs-validation text-center" novalidate>
         <div class="row g-3">
           <div class="col-sm-6">
             <label for="firstName" class="formlabel">Prénom</label>

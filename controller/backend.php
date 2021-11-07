@@ -1,17 +1,17 @@
 <?php
 
-require_once('frontend.php');
+require_once('./frontend.php');
 
 switch($_SERVER["REQUEST_METHOD"]){
     case "POST" : 
         print_r($_POST);
-        //register();
-        login();
+        register();
+        home();
 
         break;
     case "GET":
-        //signup();
-        home();
+        login();
+        pathologies();
         break;
              
 }
@@ -22,7 +22,7 @@ function register(){
     $user = new User($_POST['email'], $_POST['password'], $_POST['prenom'], $_POST['nom']);
     
     $user->register();
-    header("Location: ../view/index.php");
+    header("Location: ../index.php");
     
 }
 
@@ -36,7 +36,7 @@ function login(){
         session_start();
         $_SESSION['user'] = $user;
         print_r($user);
-        header("Location: ../view/index.php");
+        header("Location: ../index.php");
     }
     
 }
