@@ -19,10 +19,10 @@ function getList()
         array_push($data, $elem);
     }
     
-    echo(realpath(dirname(__FILE__) . '../view/frontend/template/pathologies.tpl'));
+    echo(realpath(dirname(__FILE__) . '/../view/frontend/template/pathologies.tpl'));
     $smarty->assign('reqlist',$data);
     
-    $smarty->display(realpath(dirname(__FILE__) . '../view/frontend/template/pathologies.tpl'));
+    $smarty->display(realpath(dirname(__FILE__) . '/../view/frontend/template/pathologies.tpl'));
     
 }
 
