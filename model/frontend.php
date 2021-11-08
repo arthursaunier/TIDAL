@@ -14,7 +14,7 @@ function getList()
     INNER JOIN patho AS P ON P.idP = SP.idP 
     INNER JOIN meridien AS M ON M.code = P.mer) TabI ON TabI.idS = S.idS');
     $req->execute();
-    $data=$req->fetchAll();
+    $data=$req->fetchAll(PDO::FETCH_ASSOC);
     $smarty->assign('reqlist',$data);
 }
 
