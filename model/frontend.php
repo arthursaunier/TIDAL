@@ -1,6 +1,5 @@
 <?php
 {debug}
-$smarty = new Smarty();
 function getList()
 {
     $i=0;
