@@ -13,7 +13,14 @@ function getList()
     FROM SymptPatho AS SP
     INNER JOIN patho AS P ON P.idP = SP.idP 
     INNER JOIN meridien AS M ON M.code = P.mer) TabI ON TabI.idS = S.idS');
-    $smarty->assign('reqlist',$req);
+    while($row = mysql_fetch_array($req, MYSQL_ASSOC)) {
+    
+        // If you want to display the results one by one
+        echo $row['column1'];
+        echo $row['column2']; // etc..
+    
+    }
+    $smarty->assign('reqlist',$row);
 }
 
 function getFilterPatho()
