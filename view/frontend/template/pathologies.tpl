@@ -30,9 +30,9 @@
               <a href="#" class="list-group-item">Item 1.3</a>
             </div>
           </div>
-          <div class="list-group col-lg-9 overflow-auto">
+          <div class="list-group col-lg-9 ">
             {foreach from=$reqlist item=elem}
-            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 overflow-auto" aria-current="true"
               class="rounded-circle flex-shrink-0">
               <div class="d-flex gap-2 w-100 justify-content-between">
                 <h6 class="mb-0">{$elem.patho}</h6>
