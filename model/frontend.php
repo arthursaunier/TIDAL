@@ -21,6 +21,7 @@ function getList()
     
     print_r($data);
     $smarty->assign('reqlist',$data);
+    $smarty->display(realpath(dirname(__FILE__) . '/template/pathologies.tpl'));
 }
 
 function getFilterPatho()
