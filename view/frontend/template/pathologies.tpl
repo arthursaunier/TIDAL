@@ -8,7 +8,7 @@
 
     <main class="px-3">
 
-      <div class="container overflow-auto">
+      <div class="container">
         <div class="row">
           <div class="list-group col-3">
             <a href="#" class="list-group-item list-group-item-action">Méridien</a>
