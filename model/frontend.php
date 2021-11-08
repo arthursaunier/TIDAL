@@ -19,9 +19,11 @@ function getList()
         array_push($data, $elem);
     }
     
-    print_r($data);
+    echo(realpath(dirname(__FILE__) . '../view/frontend/template/pathologies.tpl'));
     $smarty->assign('reqlist',$data);
+    
     $smarty->display(realpath(dirname(__FILE__) . '../view/frontend/template/pathologies.tpl'));
+    
 }
 
 function getFilterPatho()
