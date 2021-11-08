@@ -14,7 +14,7 @@ function info()
 
 function pathologies()
 {
-    getList();
+    $data =getList();
     $smarty = new Smarty();
     $smarty->assign('reqlist',$data);
     
