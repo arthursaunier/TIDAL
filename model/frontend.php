@@ -3,7 +3,7 @@
 
 function getList()
 {
-    $smarty = new Smarty();
+    
     $i=0;
     $data=[];
     $conn = dbConnect();
@@ -19,11 +19,8 @@ function getList()
         array_push($data, $elem);
     }
     
-    echo(realpath(dirname(__FILE__) . '/../view/frontend/template/pathologies.tpl'));
-    $smarty->assign('reqlist',$data);
     
-    $smarty->display(realpath(dirname(__FILE__) . '/../view/frontend/template/pathologies.tpl'));
-    
+    return $data;
 }
 
 function getFilterPatho()
