@@ -37,9 +37,9 @@
                 <div class="d-flex gap-2 w-100 justify-content-between">
                   {foreach from=$reqlist item=elem}
                   <div>
-                    <h6 class="mb-0">{$elem.patho}</h6>
-                    <p class="mb-0 opacity-75">{$elem.symptome}</p>
-                    <p class="mb-0 opacity-75">{$elem.meridien}</p>
+                    <h6 class="mb-0">{$elem}</h6>
+                    <p class="mb-0 opacity-75">{$elem}</p>
+                    <p class="mb-0 opacity-75">{$elem}</p>
                   </div>
                   {/foreach}
                 </div>
