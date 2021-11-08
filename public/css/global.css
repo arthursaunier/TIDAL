@@ -121,17 +121,17 @@ body {
 .opacity-75 { opacity: .75; }
 
 .list-group {
+  height: 700px;
   width: auto;
   max-width: 70%;
   margin: 4rem 0;
-  height: 700px;
 }
 
 .filter {
   width: auto;
   max-width: 30%;
   margin: 4rem 0;
-  max-height: 100%;
+  
 }
 
 /* filter */
