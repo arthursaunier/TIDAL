@@ -1,10 +1,9 @@
 <?php
-define('SMARTY_DIR', '/home/web/Documents/TIDAL/public/smarty-3.1.39/libs/');
-require_once(SMARTY_DIR . 'Smarty.class.php');
-$smarty = new Smarty();
+
 
 function getList()
 {
+    $smarty = new Smarty();
     $i=0;
     $conn = dbConnect();
     $req = $conn->prepare('SELECT S.desc symptome, TabI.desc patho, TabI.nom meridien 
@@ -19,6 +18,7 @@ function getList()
 
 function getFilterPatho()
 {
+    $smarty = new Smarty();
     $i=0;
     $conn = dbConnect();
     $req = $conn->query('SELECT P.desc AS pathologie FROM patho AS P');
@@ -29,6 +29,7 @@ function getFilterPatho()
 
 function getFilterMeridien()
 {
+    $smarty = new Smarty();
     $i=0;
     $conn = dbConnect();
     $req = $conn->query('SELECT M.nom AS meridien FROM meridien AS M');
