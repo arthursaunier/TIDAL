@@ -1,6 +1,7 @@
 <?php
-{debug}
 require 'smarty/Smarty.class.php';
+{debug}
+
 function getList()
 {
     $i=0;
