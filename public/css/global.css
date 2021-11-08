@@ -125,8 +125,6 @@ body {
   max-width: 70%;
   margin: 4rem 0;
   height: 700px;
-  
-  overflow-y: auto;
 }
 
 .filter {
