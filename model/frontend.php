@@ -13,7 +13,9 @@ function getList()
     FROM SymptPatho AS SP
     INNER JOIN patho AS P ON P.idP = SP.idP 
     INNER JOIN meridien AS M ON M.code = P.mer) TabI ON TabI.idS = S.idS');
-    print_r($req);
+    $req->execute();
+    $data=$req->fetchAll();
+    print_r($data);
     $smarty->assign('reqlist',$req);
 }
 
