@@ -30,11 +30,11 @@
               <a href="#" class="list-group-item">Item 1.3</a>
             </div>
           </div>
-          <div class="list-group col-lg-9 overflow-auto row" >
+          <div class="list-group col-lg-9 overflow-auto" >
             <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
               class="rounded-circle flex-shrink-0">
               {foreach from=$reqlist item=elem}
-              <div class="d-flex gap-2 w-100 justify-content-between">
+              <div class="d-flex gap-2 w-100 justify-content-between row">
                 <h6 class="mb-0">{$elem.patho}</h6>
                 <p class="mb-0 opacity-75">{$elem.symptome}</p>
                 <p class="mb-0 opacity-75">{$elem.meridien}</p>
