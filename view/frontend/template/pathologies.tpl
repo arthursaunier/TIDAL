@@ -1,4 +1,4 @@
-{debug}
+
 {include file="/home/web/Documents/TIDAL/view/frontend/template/header.tpl" title="pathologies"}
 
 <body class="d-flex h-100 text-center text-white bg-dark">
@@ -32,7 +32,7 @@
           </div>
           <div class="list-group col-lg-9 d-flex flex-column overflow-auto">
             {foreach from=$reqlist item=elem}
-            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 " aria-current="true"
+            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 " aria-current="true">
               <img src="../../../public/Images/aiguille.png" alt="twbs" width="32" height="32"
                 class="rounded-circle flex-shrink-0">
               <div class="d-flex gap-2 w-100 justify-content-between">
