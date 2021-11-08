@@ -1,4 +1,4 @@
-var partie1 = "<form method='POST' action='../../controller/backend.php'><div class='fond '><div class='affichage'><input type='button' value='×' onclick='cacher();' class='btn-fermer btn-outline-secondary'>";
+var partie1 = "<form method='POST' action='index.php'><div class='fond '><div class='affichage'><input type='button' value='×' onclick='cacher();' class='btn-fermer btn-outline-secondary'>";
  
 var partie2 = "<input name='email' type='text' class='champ form-control' autocomplete='off' placeholder='Utilisateur'><input name='password' type='password' class='champ form-control' autocomplete='off' placeholder='Mot de passe'>";
  
