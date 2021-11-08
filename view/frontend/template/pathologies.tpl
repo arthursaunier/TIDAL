@@ -35,11 +35,13 @@
               <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
                   class="rounded-circle flex-shrink-0">
                 <div class="d-flex gap-2 w-100 justify-content-between">
+                  {foreach from=$reqlist item=elem}
                   <div>
-                    <h6 class="mb-0">{$reqlist.patho}</h6><!-- {$patho.}-->
-                    <p class="mb-0 opacity-75">{$reqlist.symptome}</p>
-                    <p class="mb-0 opacity-75">{$reqlist.meridien}</p>
+                    <h6 class="mb-0">{$elem.patho}</h6><!-- {$patho.}-->
+                    <p class="mb-0 opacity-75">{$elem.symptome}</p>
+                    <p class="mb-0 opacity-75">{$elem.meridien}</p>
                   </div>
+                  {/foreach}
                 </div>
               </a>
 

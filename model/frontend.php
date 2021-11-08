@@ -15,8 +15,7 @@ function getList()
     INNER JOIN meridien AS M ON M.code = P.mer) TabI ON TabI.idS = S.idS');
     $req->execute();
     $data=$req->fetchAll();
-    print_r($data);
-    $smarty->assign('reqlist',$req);
+    $smarty->assign('reqlist',$data);
 }
 
 function getFilterPatho()
