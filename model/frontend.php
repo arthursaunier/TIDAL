@@ -5,6 +5,7 @@ function getList()
 {
     $smarty = new Smarty();
     $i=0;
+    $data=[]
     $conn = dbConnect();
     $req = $conn->prepare('SELECT S.desc symptome, TabI.desc patho, TabI.nom meridien 
     FROM symptome AS S
@@ -14,7 +15,10 @@ function getList()
     INNER JOIN patho AS P ON P.idP = SP.idP 
     INNER JOIN meridien AS M ON M.code = P.mer) TabI ON TabI.idS = S.idS');
     $req->execute();
-    $data=$req->fetchAll(PDO::FETCH_ASSOC);
+    while($elem=$req->fetch(PDO::FETCH_ASSOC)){
+        array_push($data, $elem);
+    }
+    
     print_r($data);
     $smarty->assign('reqlist',$data);
 }
