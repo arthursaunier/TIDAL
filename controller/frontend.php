@@ -1,15 +1,15 @@
 <?php
 
-require_once('../TIDAL/model/frontend.php');
+require_once('/home/web/Documents/TIDAL/model/frontend.php');
 
 function home()
 {
-    require_once('../TIDAL/view/frontend/home.php');
+    require_once('/home/web/Documents/TIDAL/view/frontend/home.php');
 }
 
 function info()
 {
-    require_once('../TIDAL/view/frontend/infos.php');
+    require_once('/home/web/Documents/TIDAL/view/frontend/infos.php');
 }
 
 function pathologies()
@@ -19,6 +19,6 @@ function pathologies()
 }
 function signup()
 {
-    require_once('../TIDAL/view/frontend/signup.php');
+    require_once('/home/web/Documents/TIDAL/view/frontend/signup.php');
 }
 
