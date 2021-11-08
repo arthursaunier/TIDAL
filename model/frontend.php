@@ -5,7 +5,7 @@ function getList()
 {
     $smarty = new Smarty();
     $i=0;
-    $data=[]
+    $data=[];
     $conn = dbConnect();
     $req = $conn->prepare('SELECT S.desc symptome, TabI.desc patho, TabI.nom meridien 
     FROM symptome AS S
