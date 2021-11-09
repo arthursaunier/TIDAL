@@ -44,6 +44,27 @@ function getFilterMeridien()
     
 }
 
+function getListefilterMer($input)
+{
+    
+    $i=0;
+    $data=[];
+    $conn = dbConnect();
+    $req = $conn->prepare('SELECT S.desc symptome, TabI.desc patho, TabI.nom meridien 
+    FROM symptome AS S
+    INNER JOIN 
+    (SELECT SP.idS, P.desc, M.nom
+    FROM SymptPatho AS SP
+    INNER JOIN patho AS P ON P.idP = SP.idP 
+    INNER JOIN meridien AS M ON M.code = P.mer) TabI ON TabI.idS = S.idS WHERE meridien = \''$input'\'');
+    $req->execute();
+    while($elem=$req->fetch(PDO::FETCH_ASSOC)){
+        array_push($data, $elem);
+    }
+    
+    
+    return $data;
+}
 
 function dbConnect()
 {

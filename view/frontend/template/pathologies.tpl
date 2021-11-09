@@ -10,12 +10,13 @@
 
       <div class="container">
         <div class="row">
+        <form method="GET" action="index.php,action=filtre">
           <div class="list-group col-3">
-            <a href="#" class="list-group-item list-group-item-action">Méridien</a>
-            <div class="list-group">
-              <a href="#" class="list-group-item">Item 1.1</a>
-              <a href="#" class="list-group-item">Item 1.2</a>
-              <a href="#" class="list-group-item">Item 1.3</a>
+            <input type="text" class="list-group-item list-group-item-action" name="filtremeridien">Méridien</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              {foreach from=$reqlist item=elem}
+              <a class="dropdown-item" href="#">{$elem.meridien}</a>
+              {/foreach}
             </div>
             <a href="#" class="list-group-item list-group-item-action">Type de pathologie</a>
             <div class="list-group">
@@ -30,6 +31,8 @@
               <a href="#" class="list-group-item">Item 1.3</a>
             </div>
           </div>
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Créer le compte</button>
+        </form>  
           <div class="list-group col-lg-9 d-flex flex-column overflow-auto">
             {foreach from=$reqlist item=elem}
             <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 ">

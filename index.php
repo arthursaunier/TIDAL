@@ -32,6 +32,13 @@ switch($_SERVER["REQUEST_METHOD"]){
             } elseif ($_GET['action'] == 'signup') {
                 signup();
             }
+            elseif ($_GET['action'] == 'filtre'){
+                $mer=$_GET['filtremeridien'];
+                getListefilterMer($mer);
+                $smarty = new Smarty();
+                $smarty->assign('reqlist',$data);
+                require_once('/home/web/Documents/TIDAL/view/frontend/pathologies.php');
+
         } else {
             home();
         }
