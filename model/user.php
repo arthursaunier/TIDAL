@@ -42,7 +42,7 @@ class User{
                 return false;
             }
         }catch(PDOException $e){
-            print_r($e);
+            //print_r($e);
         }
     }
     
