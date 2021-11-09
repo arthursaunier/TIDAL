@@ -10,7 +10,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="list-group col-3">
+          <div class="list-group col-3 filter">
             <a href="#" class="list-group-item list-group-item-action">Méridien</a>
             <div class="filter">
               <a href="#" class="list-group-item">Item 1.1</a>
