@@ -12,19 +12,19 @@
         <div class="row">
           <div class="list-group col-3">
             <a href="#" class="list-group-item list-group-item-action">Méridien</a>
-            <div class="list-group-item">
+            <div class="filter">
               <a href="#" class="list-group-item">Item 1.1</a>
               <a href="#" class="list-group-item">Item 1.2</a>
               <a href="#" class="list-group-item">Item 1.3</a>
             </div>
             <a href="#" class="list-group-item list-group-item-action">Type de pathologie</a>
-            <div class="list-group-item">
+            <div class="filter">
               <a href="#" class="list-group-item">Item 1.1</a>
               <a href="#" class="list-group-item">Item 1.2</a>
               <a href="#" class="list-group-item">Item 1.3</a>
             </div>
             <a href="#" class="list-group-item list-group-item-action">Caractéristiques</a>
-            <div class="list-group-item">
+            <div class="filter">
               <a href="#" class="list-group-item">Item 1.1</a>
               <a href="#" class="list-group-item">Item 1.2</a>
               <a href="#" class="list-group-item">Item 1.3</a>
