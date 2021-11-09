@@ -1,6 +1,7 @@
 <?php
 define('SMARTY_DIR', '/home/web/Documents/TIDAL/public/smarty-3.1.39/libs/');
 require_once(SMARTY_DIR . 'Smarty.class.php');
+global $smarty;
 $smarty = new Smarty();
 $smarty->debugging = true;
 
