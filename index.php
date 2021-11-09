@@ -10,10 +10,15 @@ session_start();
 require_once('controller/frontend.php');
 include_once('controller/backend.php');
 switch($_SERVER["REQUEST_METHOD"]){
-    case "POST" : 
-        print_r($_POST);
-        login();
-     
+    case "POST" :
+        if (isset($_POST['con'])) {
+            print_r($_POST);
+            login();
+        } else if (isset($_POST['inscrip'])) {
+            signup();
+        } else {
+            //no button pressed
+        }
 
         break;
     case "GET":
