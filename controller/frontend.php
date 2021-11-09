@@ -4,11 +4,13 @@ require_once('/home/web/Documents/TIDAL/model/frontend.php');
 
 function home()
 {
+    $smarty = new Smarty();
     require_once('/home/web/Documents/TIDAL/view/frontend/home.php');
 }
 
 function info()
 {
+    $smarty = new Smarty();
     require_once('/home/web/Documents/TIDAL/view/frontend/infos.php');
 }
 
@@ -23,6 +25,7 @@ function pathologies()
 }
 function signup()
 {
+    $smarty = new Smarty();
     require_once('/home/web/Documents/TIDAL/view/frontend/signup.php');
 }
 
