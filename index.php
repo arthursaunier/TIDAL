@@ -9,9 +9,16 @@ session_start();
 require_once('controller/frontend.php');
 include_once('controller/backend.php');
 switch($_SERVER["REQUEST_METHOD"]){
-    case "POST" : 
-        print_r($_POST);
-        login();
+    case "POST" :
+        if (isset($_POST['action'])) {
+            if ($_POST['action'] == 'signup') {
+                signup();
+            }
+        } else {
+            print_r($_POST);
+            login();
+        }
+       
      
 
         break;
