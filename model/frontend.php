@@ -74,7 +74,7 @@ function getListefilterMer()
     return $data;
 }
 
-function getListefilterMer()
+function getListefilterPatho()
 {
     
     $i=0;
