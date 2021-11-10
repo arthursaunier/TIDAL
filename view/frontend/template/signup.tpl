@@ -10,7 +10,7 @@
       <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"></div>
 
 
-      <form method="POST" action="index.php?action=register" class="needs-validation text-center" novalidate>
+      <form method="POST" href="index.php?action=register" class="needs-validation text-center" novalidate>
         <div class="row g-3">
           <div class="col-sm-6">
             <label for="firstName" class="formlabel">Prénom</label>
@@ -30,7 +30,7 @@
 
           <div class="col-12">
             <label for="email" class="formlabel">Email <span class="text-muted">(Facultatif)</span></label>
-            <input name="email" type="email" class="form-control" id="email" placeholder="you@example.com">
+            <input name="email" type="email" class="form-control" id="email" placeholder="you@example.com" required>
             <div class="invalid-feedback">
               Please enter a valid email address for shipping updates.
             </div>
