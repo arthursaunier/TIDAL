@@ -10,7 +10,7 @@
 
       <div class="container">
         <div class="row">
-        <form method="GET" href="index.php?action=pathologie">
+        <form method="GET" >
           <div class="list-group col-3">
             <input type="text" class="list-group-item list-group-item-action" name="filtremeridien">Méridien</a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -30,7 +30,7 @@
               <a href="#" class="list-group-item">Item 1.2</a>
               <a href="#" class="list-group-item">Item 1.3</a>
             </div>
-            <button  type="submit">Créer le compte</button>
+            <button  type="submit" href="index.php?action=pathologie">Créer le compte</button>
           </div>
           
         </form>  
