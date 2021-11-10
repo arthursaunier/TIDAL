@@ -16,7 +16,7 @@
             
             <div class="list-group">
                 {foreach from=$reqlistmer item=elem}
-                  <a href="index.php?action=meridien&meridien={$elem.meridien}" class="list-group-item">{$elem.meridien}</a>
+                  <button type="button" class="list-group-item list-group-item-action" href="index.php?action=meridien&meridien={$elem.meridien}">{$elem.meridien}</button>
                 {/foreach}
             </div>
             <a href="#" class="list-group-item list-group-item-action">Type de pathologie</a>
