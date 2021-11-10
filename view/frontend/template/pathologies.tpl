@@ -11,7 +11,7 @@
       <div class="container">
         <div class="row">
           <div class="list-group col-3">
-                       
+            <a href="#" class="list-group-item list-group-item-action">Méridien</a>          
             <div class="list-group">
                 {foreach from=$reqlistmer item=elem}
                   <a href="index.php?action=meridien&meridien={$elem.meridien}" >{$elem.meridien}</a>
