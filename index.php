@@ -32,7 +32,7 @@ switch($_SERVER["REQUEST_METHOD"]){
             } elseif ($_GET['action'] == 'signup') {
                 signup();
             }
-            elseif ($_GET['action'] == 'filtre'){
+            elseif ($_GET['filtremeridien'] != null){
                 
                 getListefilterMer();
                 $smarty = new Smarty();
