@@ -10,14 +10,18 @@
       <div class="container">
         <div class="row">
 
-          <div class="list-group col-3 overflow-auto">
+          <div class="list-group col-3 ">
             <a href="index.php?action=pathologie" class="list-group-item list-group-item-action">Reset filtre</a>
-            <div {foreach from=$reqlistmer item=elem} <a href="index.php?action=meridien&meridien={$elem.meridien}"
-              class="list-group-item list-group-item-action">{$elem.meridien}</a>
+            <div class="filter overflow-auto">
+              {foreach from=$reqlistmer item=elem}
+              <a href="index.php?action=meridien&meridien={$elem.meridien}"
+                class="list-group-item list-group-item-action">{$elem.meridien}</a>
               {/foreach}
             </div>
-            <div {foreach from=$reqlistpatho item=elem} <a href="index.php?action=patho&patho={$elem.pathologie}"
-              class="list-group-item list-group-item-action">{$elem.pathologie}</a>
+            <div  class="filter overflow-auto">
+              {foreach from=$reqlistpatho item=elem}
+              <a href="index.php?action=patho&patho={$elem.pathologie}"
+                class="list-group-item list-group-item-action">{$elem.pathologie}</a>
               {/foreach}
             </div>
           </div>
