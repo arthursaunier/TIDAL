@@ -1,6 +1,6 @@
 <?php
 function register(){
-    include_once('../model/user.php');
+    require_once('../model/user.php');
     echo $_SERVER["REQUEST_METHOD"];
     $user = new User($_POST['email'], $_POST['password'], $_POST['prenom'], $_POST['nom']);
     $user->register();
@@ -9,7 +9,7 @@ function register(){
 }
 
 function login(){
-    include_once('/home/web/Documents/TIDAL/model/user.php');
+    require_once('/home/web/Documents/TIDAL/model/user.php');
     $user = new User($_POST['email'], $_POST['password']);
     
     $user = $user->login();
