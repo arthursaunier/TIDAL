@@ -38,7 +38,7 @@ switch($_SERVER["REQUEST_METHOD"]){
                 $smarty = new Smarty();
                 $smarty->assign('reqlist',$data);
                 require_once('/home/web/Documents/TIDAL/view/frontend/pathologies.php');
-
+            }
         } else {
             home();
         }
