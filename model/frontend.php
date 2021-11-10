@@ -56,7 +56,6 @@ function getListefilterMer()
     $data=[];
     $conn = dbConnect();
     $mer=$_GET['meridien'];
-    print_r($mer);
     $req = $conn->prepare('SELECT S.desc symptome, TabI.desc patho, TabI.nom meridien 
     FROM (symptome AS S
     INNER JOIN 
@@ -69,7 +68,6 @@ function getListefilterMer()
     while($elem=$req->fetch(PDO::FETCH_ASSOC)){
         array_push($data, $elem);
     }
-    print_r($data);
     
     return $data;
 }
