@@ -13,23 +13,16 @@
 
           <div class="list-group col-3">
           <a href="index.php?action=pathologie" class="list-group-item list-group-item-action">Reset filtre</a> 
-      
+              <div
                 {foreach from=$reqlistmer item=elem}
                   <a href="index.php?action=meridien&meridien={$elem.meridien}" class="list-group-item list-group-item-action">{$elem.meridien}</a> 
                 {/foreach}         
-
-            <a href="#" class="list-group-item list-group-item-action">Type de pathologie</a>
-            <div class="list-group">
-              <a href="#" class="list-group-item">Item 1.1</a>
-              <a href="#" class="list-group-item">Item 1.2</a>
-              <a href="#" class="list-group-item">Item 1.3</a>
-            </div>
-            <a href="#" class="list-group-item list-group-item-action">Caractéristiques</a>
-            <div class="list-group">
-              <a href="#" class="list-group-item">Item 1.1</a>
-              <a href="#" class="list-group-item">Item 1.2</a>
-              <a href="#" class="list-group-item">Item 1.3</a>
-            </div>
+              </div>
+              <div
+                {foreach from=$reqlistpatho item=elem}
+                  <a href="index.php?action=patho&patho={$elem.patho}" class="list-group-item list-group-item-action">{$elem.patho}</a> 
+                {/foreach}         
+              </div>
           </div>
           
           <div class="list-group col-lg-9 d-flex flex-column overflow-auto">
