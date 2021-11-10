@@ -30,7 +30,9 @@ function signup()
 function filtre()
 {
     $data=getListefilterMer();
+    $datafiltremer =getFilterMeridien();
     $smarty = new Smarty();
     $smarty->assign('reqlist',$data);
+    $smarty->assign('reqlistmer',$datafiltremer);
     require_once('/home/web/Documents/TIDAL/view/frontend/pathologies.php');
 }
