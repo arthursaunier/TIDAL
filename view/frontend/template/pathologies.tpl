@@ -12,15 +12,16 @@
 
           <div class="list-group col-3 ">
             <a href="index.php?action=pathologie" class="list-group-item list-group-item-action">Reset filtre</a>
+            <h2>Méridiens</h2>
             <div class="filter overflow-auto">
-              <h1>Méridiens</h1>
               {foreach from=$reqlistmer item=elem}
               <a href="index.php?action=meridien&meridien={$elem.meridien}"
                 class="list-group-item list-group-item-action">{$elem.meridien}</a>
               {/foreach}
             </div>
+            <h2>Pathologies</h2>
             <div  class="filter overflow-auto">
-              <h1>Pathologies</h1>
+              
               {foreach from=$reqlistpatho item=elem}
               <a href="index.php?action=patho&patho={$elem.pathologie}"
                 class="list-group-item list-group-item-action">{$elem.pathologie}</a>
