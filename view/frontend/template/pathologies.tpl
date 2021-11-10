@@ -10,7 +10,6 @@
 
       <div class="container">
         <div class="row">
-        <form method="GET" action="index.php?action=filtre">
           <div class="list-group col-3">
             
             <div class="dropdown">
@@ -35,10 +34,8 @@
               <a href="#" class="list-group-item">Item 1.2</a>
               <a href="#" class="list-group-item">Item 1.3</a>
             </div>
-            <button  type="submit">Créer le compte</button>
           </div>
           
-        </form>  
           <div class="list-group col-lg-9 d-flex flex-column overflow-auto">
             {foreach from=$reqlist item=elem}
             <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 ">
