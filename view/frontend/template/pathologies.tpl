@@ -12,7 +12,7 @@
         <div class="row">
           <div class="list-group col-3">
             
-            <a href="#" class="list-group-item list-group-item-action">Méridien</a>
+            <a href="#" class="list-group-item list-group-item-action active">Méridien</a>
             
             <div class="list-group">
                 {foreach from=$reqlistmer item=elem}
