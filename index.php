@@ -17,7 +17,7 @@ switch($_SERVER["REQUEST_METHOD"]){
         } else if (isset($_POST['inscrip'])) {
             signup();
         } else if ($_GET['action'] == 'register') {
-            echo("salut");
+            //echo("salut");
             register1();
         } else {
             //no button pressed
