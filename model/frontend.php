@@ -68,7 +68,7 @@ function getListefilterMer()
     while($elem=$req->fetch(PDO::FETCH_ASSOC)){
         array_push($data, $elem);
     }
-    
+    print_r($data);
     
     return $data;
 }
