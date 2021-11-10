@@ -12,11 +12,11 @@
         <div class="row">
           <div class="list-group col-3">
             
-            <a href="#" class="list-group-item list-group-item-action active">Méridien</a>
+            <a href="#" class="list-group-item list-group-item-action">Méridien</a>
             
             <div class="list-group">
                 {foreach from=$reqlistmer item=elem}
-                  <a href="index.php?action=meridien&meridien={$elem.meridien}" class="list-group-item active">{$elem.meridien}</a>
+                  <a href="index.php?action=meridien&meridien={$elem.meridien}" class="list-group-item">{$elem.meridien}</a>
                 {/foreach}
             </div>
             <a href="#" class="list-group-item list-group-item-action">Type de pathologie</a>
