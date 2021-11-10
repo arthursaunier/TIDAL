@@ -10,8 +10,6 @@
 
       <div class="container">
         <div class="row">
-          <div class="list-group col-3">
-            
             <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Méridien
@@ -22,6 +20,9 @@
                 {/foreach}
               </div>
             </div>
+          <div class="list-group col-3">
+            
+
             <a href="#" class="list-group-item list-group-item-action">Type de pathologie</a>
             <div class="list-group">
               <a href="#" class="list-group-item">Item 1.1</a>
