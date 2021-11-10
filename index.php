@@ -18,7 +18,7 @@ switch($_SERVER["REQUEST_METHOD"]){
             signup();
         } else if ($_GET['action'] == 'register') {
             echo("salut");
-            register();
+            register1();
         } else {
             //no button pressed
         }
