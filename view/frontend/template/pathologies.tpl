@@ -12,7 +12,7 @@
         <div class="row">
         <form method="GET" action="index.php?action=filtre">
           <div class="list-group col-3">
-            <input type="text" class="list-group-item list-group-item-action" name="filtremeridien">Méridien</a>
+            
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               {foreach from=$reqlistmer item=elem}
               <a class="dropdown-item" href="#">{$elem.meridien}</a>
