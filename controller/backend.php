@@ -15,7 +15,9 @@ function login(){
     
     $user = $user->login();
     if(!$user){
-        echo("mdp ou email incorrect");
+        echo "<script type=\"text/javascript\">".
+        "alert('Email ou mdp incorrect');".
+        "</script>";
     }else{
         session_start();
         $_SESSION['user'] = $user;

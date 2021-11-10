@@ -9,19 +9,19 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4 text-center text-white">
-        <img src="../Images/acupuncture-process.jpg" alt="Image" class="bd-placeholder-img rounded-circle" width="140"
+        <img src="../../../public/Images/aiguille.png" alt="Image" class="bd-placeholder-img rounded-circle" width="140"
           height="140">
         <h2>Thibaut Blanchefort</h2>
         <p>co-céateur du site acupuncture.com</p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4 text-center text-white">
-        <img src="../Images/acupuncture-process.jpg" alt="Image" class="bd-placeholder-img rounded-circle" width="140"
+        <img src="../../../public/Images/aiguille.png" alt="Image" class="bd-placeholder-img rounded-circle" width="140"
           height="140">
         <h2>Théo Bruendet</h2>
         <p>co-céateur du site acupuncture.com</p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4 text-center text-white">
-        <img src="../Images/acupuncture-process.jpg" alt="Image" class="bd-placeholder-img rounded-circle" width="140"
+        <img src="../../../public/Images/aiguille.png" alt="Image" class="bd-placeholder-img rounded-circle" width="140"
           height="140">
         <h2>Arthur Saunier</h2>
         <p>co-céateur du site acupuncture.com</p>

@@ -1,6 +1,7 @@
 <?php
 define('SMARTY_DIR', '/home/web/Documents/TIDAL/public/smarty-3.1.39/libs/');
 require_once(SMARTY_DIR . 'Smarty.class.php');
+global $smarty;
 $smarty = new Smarty();
 $smarty->debugging = true;
 
@@ -23,7 +24,6 @@ switch($_SERVER["REQUEST_METHOD"]){
     case "GET":
         
         if(isset($_SESSION['user'])){
-            //print_r($_SESSION['user']); faire un affichage de lorsqu'on est co 
             echo '<h1>tes co fdp</h1>';
         } 
         if (isset($_GET['action'])) {
