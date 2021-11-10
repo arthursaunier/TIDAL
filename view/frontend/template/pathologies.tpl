@@ -13,10 +13,15 @@
         <form method="GET" action="index.php?action=filtre">
           <div class="list-group col-3">
             
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              {foreach from=$reqlistmer item=elem}
-              <a class="dropdown-item" href="#">{$elem.meridien}</a>
-              {/foreach}
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Méridien
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                {foreach from=$reqlistmer item=elem}
+                  <a class="dropdown-item" href="#">{$elem.meridien}</a>
+                {/foreach}
+              </div>
             </div>
             <a href="#" class="list-group-item list-group-item-action">Type de pathologie</a>
             <div class="list-group">
