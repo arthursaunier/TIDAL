@@ -13,10 +13,17 @@
           <div class="list-group col-3">
             
             <a href="#" class="list-group-item list-group-item-action">Méridien</a>
-            <div class="list-group">
-                {foreach from=$reqlistmer item=elem}
-                  <a href="index.php?action=meridien&meridien={$elem.meridien}" class="list-group-item">{$elem.meridien}</a>
-                {/foreach}
+
+            <div class="dropdown show">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown link
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  {foreach from=$reqlistmer item=elem}
+                    <a href="index.php?action=meridien&meridien={$elem.meridien}" class="list-group-item">{$elem.meridien}</a>
+                  {/foreach}
+              </div>
             </div>
             <a href="#" class="list-group-item list-group-item-action">Type de pathologie</a>
             <div class="list-group">
