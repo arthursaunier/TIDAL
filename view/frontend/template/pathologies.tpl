@@ -10,19 +10,14 @@
 
       <div class="container">
         <div class="row">
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Méridien
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="top-start">
+          <div class="list-group col-3">
+            
+            <a href="#" class="list-group-item list-group-item-action">Méridien</a>
+            <div class="list-group">
                 {foreach from=$reqlistmer item=elem}
                   <a class="dropdown-item" href="#">{$elem.meridien}</a>
                 {/foreach}
-              </div>
             </div>
-          <div class="list-group col-3">
-            
-
             <a href="#" class="list-group-item list-group-item-action">Type de pathologie</a>
             <div class="list-group">
               <a href="#" class="list-group-item">Item 1.1</a>
