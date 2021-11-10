@@ -15,7 +15,7 @@
             <a href="#" class="list-group-item list-group-item-action">Méridien</a>
             <div class="list-group">
                 {foreach from=$reqlistmer item=elem}
-                  <a class="dropdown-item" href="#">{$elem.meridien}</a>
+                  <a href="#" class="list-group-item">{$elem.meridien}</a>
                 {/foreach}
             </div>
             <a href="#" class="list-group-item list-group-item-action">Type de pathologie</a>
