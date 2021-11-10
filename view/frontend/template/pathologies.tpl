@@ -16,7 +16,7 @@
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Méridien
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="top-start">
                 {foreach from=$reqlistmer item=elem}
                   <a class="dropdown-item" href="#">{$elem.meridien}</a>
                 {/foreach}
