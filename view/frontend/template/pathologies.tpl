@@ -20,7 +20,7 @@
               </div>
               <div
                 {foreach from=$reqlistpatho item=elem}
-                  <a href="index.php?action=patho&patho={$elem.desc}" class="list-group-item list-group-item-action">{$elem.desc}</a> 
+                  <a href="index.php?action=patho&patho={$elem.pathologie}" class="list-group-item list-group-item-action">{$elem.pathologie}</a> 
                 {/foreach}         
               </div>
           </div>
