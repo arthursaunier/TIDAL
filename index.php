@@ -12,10 +12,12 @@ include_once('controller/backend.php');
 switch($_SERVER["REQUEST_METHOD"]){
     case "POST" :
         if (isset($_POST['con'])) {
-            print_r($_POST);
+            //print_r($_POST);
             login();
         } else if (isset($_POST['inscrip'])) {
             signup();
+        } else if ($_POST['action'] == 'register') {
+            register();
         } else {
             //no button pressed
         }
