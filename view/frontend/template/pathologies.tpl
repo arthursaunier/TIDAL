@@ -12,16 +12,14 @@
         <div class="row">
           <div class="list-group col-3">
             
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown button
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Large button
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <div class="dropdown-menu">
                 <a class="dropdown-item" href="index.php?action=meridien&meridien=Poumon">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
               </div>
-            </div>            
+            </div>          
             <a href="#" class="list-group-item list-group-item-action">Méridien</a>
             
             <div class="list-group">
