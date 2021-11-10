@@ -20,7 +20,7 @@
       <a class="nav-link {$home}" aria-current="page" href="index.php?action=home">Home</a>
       <a class="nav-link {$patho}" href="index.php?action=pathologie">Pathologies</a>
       <a class="nav-link {$infos}" href="index.php?action=info">Infos</a>
-      <a class="nav-link {$signup}" onclick="afficher()"><i class="bi bi-person"></i></a>
+      <a class="nav-link {$signup}" onclick="afficher()"><i class="$log_auth"></i></a>
     </nav>
     <div class="d-flex h-100 justify-content-center text-white">
       <div id="auth" class="text-center"></div>

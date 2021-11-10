@@ -3,7 +3,7 @@ define('SMARTY_DIR', '/home/web/Documents/TIDAL/public/smarty-3.1.39/libs/');
 require_once(SMARTY_DIR . 'Smarty.class.php');
 global $smarty;
 $smarty = new Smarty();
-$smarty->debugging = true;
+//$smarty->debugging = true;
 
 session_start();
 
@@ -27,9 +27,12 @@ switch($_SERVER["REQUEST_METHOD"]){
     case "GET":
         
         if(isset($_SESSION['user'])){
-            //echo '<h1>tes co fdp</h1>';
-
-        } 
+            $logo = "bi bi-person-check-fill";
+            $smarty->assign('log_auth',$logo);
+        } else {
+            $logo = "bi bi-person";
+            $smarty->assign('log_auth',$logo);
+        }
         if (isset($_GET['action'])) {
             if ($_GET['action'] == 'home') {
                 home();
