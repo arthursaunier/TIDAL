@@ -55,7 +55,7 @@ function getListefilterMer()
     $i=0;
     $data=[];
     $conn = dbConnect();
-    $mer=$_GET['filtremeridien'];
+    $mer=$_GET['meridien'];
     $req = $conn->prepare('SELECT S.desc symptome, TabI.desc patho, TabI.nom meridien 
     FROM symptome AS S
     INNER JOIN 
