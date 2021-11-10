@@ -63,8 +63,8 @@ function getListefilterMer()
     (SELECT SP.idS, P.desc, M.nom
     FROM SymptPatho AS SP
     INNER JOIN patho AS P ON P.idP = SP.idP 
-    INNER JOIN meridien AS M ON M.code = P.mer) TabI ON TabI.idS = S.idS WHERE meridien = ?');
-    $req->execute(array($mer));
+    INNER JOIN meridien AS M ON M.code = P.mer) TabI ON TabI.idS = S.idS WHERE meridien = \''.$mer.'\'');
+    $req->execute();
     print_r($req);
     while($elem=$req->fetch(PDO::FETCH_ASSOC)){
         array_push($data, $elem);
