@@ -27,12 +27,25 @@ function signup()
 {
     require_once('/home/web/Documents/TIDAL/view/frontend/signup.php');
 }
-function filtre()
+function filtremer()
 {
     $data=getListefilterMer();
     $datafiltremer =getFilterMeridien();
+    $datafiltrepatho =getFilterPatho();
     $smarty = new Smarty();
     $smarty->assign('reqlist',$data);
     $smarty->assign('reqlistmer',$datafiltremer);
+    $smarty->assign('reqlistpatho',$datafiltrepatho);
+    require_once('/home/web/Documents/TIDAL/view/frontend/pathologies.php');
+}
+function filtrepatho()
+{
+    $data=getListefilterPatho();
+    $datafiltremer =getFilterMeridien();
+    $datafiltrepatho =getFilterPatho();
+    $smarty = new Smarty();
+    $smarty->assign('reqlist',$data);
+    $smarty->assign('reqlistmer',$datafiltremer);
+    $smarty->assign('reqlistpatho',$datafiltrepatho);
     require_once('/home/web/Documents/TIDAL/view/frontend/pathologies.php');
 }
