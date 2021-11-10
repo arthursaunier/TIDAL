@@ -10,11 +10,11 @@
 
       <div class="container">
         <div class="row">
-        <form method="GET" >
+        <form method="GET" action="index.php?action=filtre">
           <div class="list-group col-3">
             <input type="text" class="list-group-item list-group-item-action" name="filtremeridien">Méridien</a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              {foreach from=$reqlist item=elem}
+              {foreach from=$reqlistmer item=elem}
               <a class="dropdown-item" href="#">{$elem.meridien}</a>
               {/foreach}
             </div>
@@ -30,7 +30,7 @@
               <a href="#" class="list-group-item">Item 1.2</a>
               <a href="#" class="list-group-item">Item 1.3</a>
             </div>
-            <button  type="submit" href="index.php?action=pathologie">Créer le compte</button>
+            <button  type="submit">Créer le compte</button>
           </div>
           
         </form>  

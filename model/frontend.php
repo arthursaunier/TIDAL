@@ -18,15 +18,15 @@ function getList()
     while($elem=$req->fetch(PDO::FETCH_ASSOC)){
         array_push($data, $elem);
     }
-    
-    
+
     return $data;
 }
 
 function getFilterPatho()
 {
-    $smarty = new Smarty();
+    
     $i=0;
+    $data=[];
     $conn = dbConnect();
     $req = $conn->query('SELECT P.desc AS pathologie FROM patho AS P');
 
@@ -36,11 +36,16 @@ function getFilterPatho()
 
 function getFilterMeridien()
 {
-    $smarty = new Smarty();
+    $data=[];
     $i=0;
     $conn = dbConnect();
     $req = $conn->query('SELECT M.nom AS meridien FROM meridien AS M');
-    $smarty->assign('reqmer',$req);
+    $req->execute();
+    while($elem=$req->fetch(PDO::FETCH_ASSOC)){
+        array_push($data, $elem);
+    }
+
+    return $data;
     
 }
 
