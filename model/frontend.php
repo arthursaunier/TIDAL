@@ -58,12 +58,12 @@ function getListefilterMer()
     $mer=$_GET['meridien'];
     print_r($mer);
     $req = $conn->prepare('SELECT S.desc symptome, TabI.desc patho, TabI.nom meridien 
-    FROM symptome AS S
+    FROM (symptome AS S
     INNER JOIN 
     (SELECT SP.idS, P.desc, M.nom
     FROM SymptPatho AS SP
     INNER JOIN patho AS P ON P.idP = SP.idP 
-    INNER JOIN meridien AS M ON M.code = P.mer) TabI ON TabI.idS = S.idS WHERE meridien = \''.$mer.'\'');
+    INNER JOIN meridien AS M ON M.code = P.mer) TabI ON TabI.idS = S.idS) WHERE TabI.nom = \''.$mer.'\'');
     $req->execute();
     
     while($elem=$req->fetch(PDO::FETCH_ASSOC)){
