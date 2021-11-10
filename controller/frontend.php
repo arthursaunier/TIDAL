@@ -25,7 +25,7 @@ function pathologies()
 }
 function signup()
 {
-    //$smarty = new Smarty();
+    $smarty = new Smarty();
     require_once('/home/web/Documents/TIDAL/view/frontend/signup.php');
 }
 
