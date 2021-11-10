@@ -12,11 +12,21 @@
         <div class="row">
           <div class="list-group col-3">
             
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="index.php?action=meridien&meridien=Poumon">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>            
             <a href="#" class="list-group-item list-group-item-action">Méridien</a>
             
             <div class="list-group">
                 {foreach from=$reqlistmer item=elem}
-                  <button type="button" class="list-group-item list-group-item-action" href="index.php?action=meridien&meridien={$elem.meridien}">{$elem.meridien}</button>
+                  <a href="index.php?action=meridien&meridien={$elem.meridien}" class="list-group-item">{$elem.meridien}</a>
                 {/foreach}
             </div>
             <a href="#" class="list-group-item list-group-item-action">Type de pathologie</a>
