@@ -24,7 +24,6 @@ switch($_SERVER["REQUEST_METHOD"]){
     case "GET":
         
         if(isset($_SESSION['user'])){
-            //print_r($_SESSION['user']); faire un affichage de lorsqu'on est co 
             echo '<h1>tes co fdp</h1>';
         } 
         if (isset($_GET['action'])) {
