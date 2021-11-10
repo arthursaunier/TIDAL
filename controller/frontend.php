@@ -16,9 +16,11 @@ function pathologies()
 {
     $data =getList();
     $datafiltremer =getFilterMeridien();
+    $datafiltrepatho =getFilterPatho();
     $smarty = new Smarty();
     $smarty->assign('reqlist',$data);
     $smarty->assign('reqlistmer',$datafiltremer);
+    $smarty->assign('reqlistpatho',$datafiltrepatho);
     
     //$smarty->display(realpath(dirname(__FILE__) . '/../view/frontend/template/pathologies.tpl'));
     require_once('/home/web/Documents/TIDAL/view/frontend/pathologies.php');
