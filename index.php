@@ -16,7 +16,8 @@ switch($_SERVER["REQUEST_METHOD"]){
             login();
         } else if (isset($_POST['inscrip'])) {
             signup();
-        } else if ($_POST['action'] == 'register') {
+        } else if ($_GET['action'] == 'register') {
+            echo("salut");
             register();
         } else {
             //no button pressed
@@ -26,7 +27,8 @@ switch($_SERVER["REQUEST_METHOD"]){
     case "GET":
         
         if(isset($_SESSION['user'])){
-            echo '<h1>tes co fdp</h1>';
+            //echo '<h1>tes co fdp</h1>';
+
         } 
         if (isset($_GET['action'])) {
             if ($_GET['action'] == 'home') {
