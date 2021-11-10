@@ -9,6 +9,7 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
   <link rel="stylesheet" href="../../../public/css/global.css">
   <link href="../../../public/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
   <style>
     .bd-placeholder-img {
