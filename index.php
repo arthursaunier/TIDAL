@@ -33,8 +33,8 @@ switch($_SERVER["REQUEST_METHOD"]){
                 signup();
             }
             elseif ($_GET['action'] == 'filtre'){
-                $mer=$_GET['filtremeridien'];
-                getListefilterMer($mer);
+                
+                getListefilterMer();
                 $smarty = new Smarty();
                 $smarty->assign('reqlist',$data);
                 require_once('/home/web/Documents/TIDAL/view/frontend/pathologies.php');
