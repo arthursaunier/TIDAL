@@ -11,20 +11,10 @@
       <div class="container">
         <div class="row">
           <div class="list-group col-3">
-            
-            <div class="btn-group">
-              <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Large button
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="index.php?action=meridien&meridien=Poumon">Action</a>
-              </div>
-            </div>          
-            <a href="#" class="list-group-item list-group-item-action">Méridien</a>
-            
+                       
             <div class="list-group">
                 {foreach from=$reqlistmer item=elem}
-                  <a href="index.php?action=meridien&meridien={$elem.meridien}" class="list-group-item">{$elem.meridien}</a>
+                  <a href="index.php?action=meridien&meridien={$elem.meridien}" >{$elem.meridien}</a>
                 {/foreach}
             </div>
             <a href="#" class="list-group-item list-group-item-action">Type de pathologie</a>
