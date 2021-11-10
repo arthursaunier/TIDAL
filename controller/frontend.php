@@ -27,4 +27,10 @@ function signup()
 {
     require_once('/home/web/Documents/TIDAL/view/frontend/signup.php');
 }
-
+function filtre()
+{
+    $data=getListefilterMer();
+    $smarty = new Smarty();
+    $smarty->assign('reqlist',$data);
+    require_once('/home/web/Documents/TIDAL/view/frontend/pathologies.php');
+}

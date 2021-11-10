@@ -34,10 +34,7 @@ switch($_SERVER["REQUEST_METHOD"]){
             }
             elseif ($_GET['action'] == 'meridien'){
                 
-                $data=getListefilterMer();
-                $smarty = new Smarty();
-                $smarty->assign('reqlist',$data);
-                require_once('/home/web/Documents/TIDAL/view/frontend/pathologies.php');
+                filtre();
             }
         } else {
             home();
