@@ -20,10 +20,9 @@ class User{
         try{
         $this->_password = password_hash($this->_password, PASSWORD_BCRYPT);
         $bdd_ref = bdd::connect();
-            $req = $bdd_ref->prepare('INSERT INTO "user" ("email", "password", "prenom", "nom") VALUES (\''.$this->_email.'\', \''.$this->_password.'\', \''.$this->_prenom.'\', \''.$this->_nom.'\')');
-            
+            $req = $bdd_ref->prepare('INSERT INTO "user" ("email", "password", "prenom", "nom") VALUES (?,?,?,?)');            
             print_r($bdd_ref->errorInfo());
-            $req->execute(); 
+            $req->execute(array($this->_email,$this->_password,$this->_prenom,$this->_nom)); 
             print_r($req);
         }catch(PDOException $e){
             print_r($e);
@@ -32,8 +31,8 @@ class User{
     public function login(){
         try{
             $bdd_ref = bdd::connect();
-            $req = $bdd_ref->prepare('SELECT * from "user" where email= \''.$this->_email.'\'');
-            $req->execute(); 
+            $req = $bdd_ref->prepare('SELECT * from "user" where email= ?');
+            $req->execute(array($this->_email)); 
             $user= $req->fetch(PDO::FETCH_OBJ);
            
             if(password_verify($this->_password, $user->password)){
