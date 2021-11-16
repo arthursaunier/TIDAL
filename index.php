@@ -43,6 +43,14 @@ switch($_SERVER["REQUEST_METHOD"]){
             } elseif ($_GET['action'] == 'signup') {
                 signup();
             }
+            elseif ($_GET['action'] == 'meridien'){
+                
+                filtremer();
+            }
+            elseif ($_GET['action'] == 'patho'){
+                
+                filtrepatho();
+            }            
         } else {
             home();
         }
