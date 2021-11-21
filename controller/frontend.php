@@ -24,7 +24,7 @@ function pathologies()
     $smarty->assign('reqlistmer',$datafiltremer);
     $smarty->assign('reqlistpatho',$datafiltrepatho);
     
-    //$smarty->display(realpath(dirname(__FILE__) . '/../view/frontend/template/pathologies.tpl'));
+    
     require_once('/home/web/Documents/TIDAL/view/frontend/pathologies.php');
 }
 function signup()
